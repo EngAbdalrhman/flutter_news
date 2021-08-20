@@ -1,0 +1,35 @@
+const HOME({Key? key}) : super(key: key);
+
+return Generate(
+              number: n,
+              title: title,
+              urlImage: urlToImage,
+              date: date,
+            );
+
+  /*
+  // top
+    TextEditingController _country_controller = TextEditingController();
+ // wediget
+  Padding(
+                    padding: const EdgeInsets.all(50.0),
+                    child: TextField(
+                      controller: _country_controller,
+                      decoration: InputDecoration(
+                        hintText: 'Search for Country',
+                        labelText: 'Country',
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                      ),
+                      keyboardType:
+                          TextInputType.text, // keyboard (nums only or all)
+                      obscureText: false, // if password .. true
+                    ),
+                  ),
+                  //setstate
+                   _country_controller.text != null
+                            ? country = _country_controller.text
+                            : print(_country_controller.text);
+                  */
+                  
