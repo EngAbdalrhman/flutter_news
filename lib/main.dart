@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
             titleTextStyle: TextStyle(
               fontSize: 20.0,
               fontWeight: FontWeight.bold,
-            )),
+            ),),
         scaffoldBackgroundColor: Color(0xFF303030),
         bottomNavigationBarTheme: BottomNavigationBarThemeData(
           type: BottomNavigationBarType.fixed,

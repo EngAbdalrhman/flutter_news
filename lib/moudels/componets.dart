@@ -35,17 +35,17 @@ List<BottomNavigationBarItem> items = [
     icon: Icon(Icons.science),
     label: 'Tech',
   ),
-  BottomNavigationBarItem(
+  /* BottomNavigationBarItem(
     icon: Icon(Icons.settings),
     label: 'Settings',
-  ),
+  ),*/
 ];
 
 Future<Newses> getBusiness() async {
   category = 'business';
   http.Response futureBusiness = await http.get(Uri.parse(
       'https://newsapi.org/v2/top-headlines?country=$country&category=$category&apiKey=$apiKey'));
-  print(futureBusiness.body);
+  // print(futureBusiness.body);
   if (futureBusiness.statusCode == 200) {
     return Newses.fromJson(json.decode(futureBusiness.body));
   } else {
